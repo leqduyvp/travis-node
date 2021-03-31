@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'npm install'
                 sh 'npm --version'
                 sh 'node ./src/index.js'
             }

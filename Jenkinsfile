@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm install'
-                sh 'npm --version'
+                sh 'sudo npm install'
+                sh 'sudo npm --version'
                 sh 'node ./src/index.js'
             }
         }
